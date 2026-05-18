@@ -52,7 +52,7 @@ model Fornecedor {
   municipio         String
   uf                String
   cep               String
-  telefone           String
+  telefone          String
   produtos          Produto[]     @relation(fields: [produto_ids], references: [id])
   produto_ids       String[]      @db.ObjectId
 }
